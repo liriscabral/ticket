@@ -1,0 +1,38 @@
+button{
+    cursor: pointer;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.bt-salvar{
+    background-color: blue;
+}
+.bt-salvar:hover{
+    background-color: rgb(38, 38, 163);
+}
+
+.bt-cancelar{
+    background-color: brown;
+}
+.bt-cancelar:hover{
+    background-color: rgb(126, 29, 29);
+}
+
+.noAction {
+    background-color: green;
+}
+.noAction:hover{
+    background-color: rgb(19, 102, 19);
+}
+
+.p{
+    width: 100px;
+}
+.m{
+    width: 150px;
+}
+.g{
+    width: 200px;
+}
