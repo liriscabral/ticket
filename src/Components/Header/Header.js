@@ -1,6 +1,8 @@
+import { useEffect } from 'react';
 import HeaderIcones from '../HeaderIcone/HeaderIcone';
 import Logo from '../Logo/Logo';
 import './Header.css'
+import { useState } from 'react';
 
 const Header = () => {
     
@@ -14,9 +16,16 @@ const Header = () => {
         return `${dia}/${mes}/${ano} ${hora}:${minuto}`;
     }
 
+    const [varievelData, setData] = useState(formataData(new Date()));
+
+    useEffect(() => {
+        formataData(new Date())
+    }, [varievelData]);
+
     return(
         <div className="head-container">
             <Logo></Logo>
+            <button className="btn-hora" onClick={() => setData(formataData(new Date))}>Atualizar Horário</button>
             <div>{formataData(new Date())}</div>
             <HeaderIcones></HeaderIcones>
         </div>

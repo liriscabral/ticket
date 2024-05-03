@@ -12,6 +12,9 @@ align-items: center;
 }
 
 .head-container div {
-    margin: 15px;
-    
+    margin: 15px; 
+}
+
+.btn-hora {
+    color: black;
 }
